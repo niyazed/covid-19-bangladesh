@@ -6,4 +6,4 @@
 
 Storing data into google spreadsheet in realtime. You can collect data from the link.
 
-🔗 Google Spreadsheet - https://bit.ly/2wAydQX
+🔗 Google Spreadsheet - https://bit.ly/3btXUlh
