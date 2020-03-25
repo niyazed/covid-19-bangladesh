@@ -53,59 +53,85 @@
     
                       <div class="field">
                         <label class="label">Gender</label>
-                        <div class="control">
-                          <input name="gender" class="input" type="text" placeholder="Gender">
-                        </div>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label>
                         <p class="help">Specify your gender</p>
                       </div>
     
                       <div class="field">
                         <label class="label">Have you been in contact with a positive case?</label>
                         <div class="control">
-                          <input name="close_contact" class="input" type="text" placeholder="Yes/No">
+                          <input name="close_contact" class="input" type="text" placeholder="Your Input">
                         </div>
                         <p class="help">If yes, please write the name of country that the person came from.</p>
                       </div>
     
+                      <hr>
+
                       <div class="field">
                         <label class="label">Do you have fever?</label>
                         <div class="control">
-                          <input name="fever" class="input" type="text" placeholder="Yes/No">
+                          <input name="fever" id="yes" type="radio" value="Yes">
+                          <label for="yes">Yes</label>
+                          <input name="fever" id="no" type="radio" value="No">
+                          <label for="no">No</label>
                         </div>
-                        <p class="help">Please write "Yes" or "No" only</p>
+                        <p class="help"></p>
                       </div>
     
                       <div class="field">
                         <label class="label">Do you have dry cough?</label>
                         <div class="control">
-                          <input name="dry_cough" class="input" type="text" placeholder="Yes/No">
+                          <!-- <input name="dry_cough" class="input" type="text" placeholder="Yes/No"> -->
+                          <input name="dry_cough" id="yes" type="radio" value="Yes">
+                          <label for="yes">Yes</label>
+                          <input name="dry_cough" id="no" type="radio" value="No">
+                          <label for="no">No</label>
                         </div>
-                        <p class="help">Please write "Yes" or "No" only</p>
+                        <p class="help"></p>
                       </div>
     
                       <div class="field">
                         <label class="label">Do you have sore throat?</label>
                         <div class="control">
-                          <input name="sore_throat" class="input" type="text" placeholder="Yes/No">
+                          <!-- <input name="sore_throat" class="input" type="text" placeholder="Yes/No"> -->
+                          <input name="sore_throat" id="yes" type="radio" value="Yes">
+                          <label for="yes">Yes</label>
+                          <input name="sore_throat" id="no" type="radio" value="No">
+                          <label for="no">No</label>
                         </div>
-                        <p class="help">Please write "Yes" or "No" only</p>
+                        <p class="help"></p>
                       </div>
     
                       <div class="field">
                         <label class="label">Do you have headaches?</label>
                         <div class="control">
-                          <input name="headaches" class="input" type="text" placeholder="Yes/No">
+                          <!-- <input name="headaches" class="input" type="text" placeholder="Yes/No"> -->
+                          <input name="headaches" id="yes" type="radio" value="Yes">
+                          <label for="yes">Yes</label>
+                          <input name="headaches" id="no" type="radio" value="No">
+                          <label for="no">No</label>
                         </div>
-                        <p class="help">Please write "Yes" or "No" only</p>
+                        <p class="help"></p>
                       </div>
     
                       <div class="field">
                         <label class="label">Do you have shortness of breath?</label>
                         <div class="control">
-                          <input name="shortness_breath" class="input" type="text" placeholder="Yes/No">
+                          <!-- <input name="shortness_breath" class="input" type="text" placeholder="Yes/No"> -->
+                          <input name="shortness_breath" id="yes" type="radio" value="Yes">
+                          <label for="yes">Yes</label>
+                          <input name="shortness_breath" id="no" type="radio" value="No">
+                          <label for="no">No</label>
                         </div>
-                        <p class="help">Please write "Yes" or "No" only</p>
+                        <p class="help"></p>
                       </div>
+                      
+                      <hr>
 
                       <div class="field">
                         <label class="label">How long you are experiencing these symptoms?</label>
@@ -155,6 +181,7 @@
 <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbwNRRbKs91XS2dasJVARjmJ1LSKAx3E34glAXwfEOMlwGK9VyRU/exec'
     const form = document.forms['submit-to-google-sheet']
+    console.log(form)
   
     form.addEventListener('submit', e => {
       e.preventDefault()
